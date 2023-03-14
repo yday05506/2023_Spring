@@ -10,9 +10,9 @@ public class Main {
 
         Sports s1 = ctx.getBean("s1", Sports.class);
 
-        s1.Sports("야구", 5);
-        s1.getName("야구");
-        s1.getPlayer(5);
+        s1.Sports();
+        s1.getName();
+        s1.getPlayer();
         s1.rule();
 
         ctx.close();

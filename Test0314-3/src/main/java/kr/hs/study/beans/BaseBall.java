@@ -1,25 +1,19 @@
 package kr.hs.study.beans;
 
 public class BaseBall implements Sports{
-    String name;
-    int player;
     @Override
-    public void Sports(String name, int player) {
-        this.player = player;
-        this.name = name;
-        System.out.println("경기 종목 : " + name + "\n선수 인원 : " + player);
+    public void Sports() {
+        System.out.println("경기 종목 : 야구 \n 선수 인원 : 5명");
     }
 
     @Override
-    public void getPlayer(int player) {
-        this.player = player;
-        System.out.println("선수 인원 : " + player);
+    public void getPlayer() {
+        System.out.println("선수 인원 : 5명");
     }
 
     @Override
     public void getName(String name) {
-        this.name = name;
-        System.out.println("경기 종목 : " + name);
+        System.out.println("경기 종목 : 야구");
     }
 
     @Override
