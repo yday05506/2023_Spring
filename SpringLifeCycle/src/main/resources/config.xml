@@ -10,7 +10,7 @@
 	                    http://www.springframework.org/schema/aop
 	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="t1" class="kr.hs.study.beans.TestBean1"/>
+    <bean id="t1" class="kr.hs.study.beans.TestBean1" lazy-init="true" init-method="init_method" destroy-method="destroy_method"/>
 
 
 
