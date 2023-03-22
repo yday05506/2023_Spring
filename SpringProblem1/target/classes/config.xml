@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context-5.0.2.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="p1" class="kr.hs.study.beans.Problem1">
+        <constructor-arg value="김민주"/>
+        <constructor-arg value="양다연"/>
+    </bean>
+
+    <bean id="p2" class="kr.hs.study.beans.Problem2">
+        <constructor-arg value="31"/>
+        <constructor-arg value="19"/>
+        <constructor-arg value="93"/>
+    </bean>
+
+    <bean id="p3" class="kr.hs.study.beans.Problem3">
+        <constructor-arg value="31"/>
+        <constructor-arg value="31"/>
+    </bean>
+
+    <bean id="p4" class="kr.hs.study.beans.Problem4">
+        <constructor-arg value="31"/>
+        <constructor-arg value="19"/>
+        <constructor-arg value="28"/>
+    </bean>
+
+    <bean id="p5" class="kr.hs.study.beans.Problem5">
+        <constructor-arg value="11"/>
+    </bean>
+
+    <bean id="p6" class="kr.hs.study.beans.Problem6">
+        <constructor-arg value="10"/>
+        <constructor-arg value="15"/>
+        <constructor-arg value="36"/>
+    </bean>
+
+    <bean id="p9" class="kr.hs.study.beans.Problem9">
+        <constructor-arg value="10"/>
+        <constructor-arg value="24"/>
+        <constructor-arg value="71"/>
+        <constructor-arg value="39"/>
+        <constructor-arg value="5"/>
+    </bean>
+
+
+</beans>
