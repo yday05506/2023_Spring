@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context-5.0.2.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="p1" class="kr.hs.study.beans.Problem1">
+        <property name="data1" value="김민주"/>
+        <property name="data2" value="양다연"/>
+    </bean>
+
+    <bean id="p2" class="kr.hs.study.beans.Problem2">
+        <property name="data1" value="10"/>
+        <property name="data2" value="93"/>
+        <property name="data3" value="31"/>
+    </bean>
+
+    <bean id="p3" class="kr.hs.study.beans.Problem3">
+        <property name="data1" value="31"/>
+        <property name="data2" value="19"/>
+    </bean>
+
+    <bean id="p4" class="kr.hs.study.beans.Problem4">
+        <property name="data1" value="31"/>
+        <property name="data2" value="19"/>
+        <property name="data3" value="28"/>
+    </bean>
+
+    <bean id="p5" class="kr.hs.study.beans.Problem5">
+        <property name="data1" value="31"/>
+    </bean>
+
+    <bean id="p6" class="kr.hs.study.beans.Problem6">
+        <property name="data1" value="93"/>
+        <property name="data2" value="19"/>
+        <property name="data3" value="31"/>
+    </bean>
+
+    <bean id="p7" class="kr.hs.study.beans.Problem7">
+        <property name="data1" value="52"/>
+        <property name="data2" value="95"/>
+        <property name="data3" value="18"/>
+    </bean>
+
+    <bean id="p8" class="kr.hs.study.beans.Problem8">
+        <property name="data1" value="52"/>
+        <property name="data2" value="95"/>
+        <property name="data3" value="18"/>
+    </bean>
+
+    <bean id="p9" class="kr.hs.study.beans.Problem9">
+        <property name="data1" value="12"/>
+        <property name="data2" value="58"/>
+        <property name="data3" value="23"/>
+        <property name="data4" value="32"/>
+        <property name="data5" value="45"/>
+    </bean>
+
+
+
+
+
+
+
+</beans>
