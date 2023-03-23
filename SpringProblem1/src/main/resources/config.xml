@@ -41,6 +41,18 @@
         <constructor-arg value="36"/>
     </bean>
 
+    <bean id="p7" class="kr.hs.study.beans.Problem7">
+        <constructor-arg value="30"/>
+        <constructor-arg value="74"/>
+        <constructor-arg value="24"/>
+    </bean>
+
+    <bean id="p8" class="kr.hs.study.beans.Problem8">
+        <constructor-arg value="30"/>
+        <constructor-arg value="74"/>
+        <constructor-arg value="24"/>
+    </bean>
+
     <bean id="p9" class="kr.hs.study.beans.Problem9">
         <constructor-arg value="10"/>
         <constructor-arg value="24"/>

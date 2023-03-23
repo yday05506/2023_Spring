@@ -31,6 +31,14 @@ public class Main {
         p6.prData();
         System.out.println("===============================");
 
+        Problem7 p7 = ctx.getBean("p7", Problem7.class);
+        p7.prData();
+        System.out.println("===============================");
+
+        Problem8 p8 = ctx.getBean("p8", Problem8.class);
+        p8.prData();
+        System.out.println("===============================");
+
         Problem9 p9 = ctx.getBean("p9", Problem9.class);
         p9.prData();
         System.out.println("===============================");
