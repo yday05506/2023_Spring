@@ -11,6 +11,9 @@
 	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <bean id="t1" class="kr.hs.study.beans.TestBean1"/>
+    <bean id="t2" class="kr.hs.study.beans.TestBean2"/>
+    <bean id="t3" class="kr.hs.study.beans.TestBean3" lazy-init="true"/>
+    <bean id="t4" class="kr.hs.study.beans.TestBean4" init-method="init" destroy-method="destroy"/>
 
 
 
