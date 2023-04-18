@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context-5.0.2.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="d1" class="kr.hs.study.beans.DogXml">
+        <constructor-arg value="멍멍" type="String" name="barkData"/>
+        <constructor-arg value="강아지가 먹다" type="String" name="eatData"/>
+        <constructor-arg value="강아지가 뛰다" type="String" name="moveData"/>
+    </bean>
+
+    <bean id="c1" class="kr.hs.study.beans.CatXml">
+        <constructor-arg value="야옹야옹" type="String" name="barkData"/>
+        <constructor-arg value="고양이가 먹다" type="String" name="eatData"/>
+        <constructor-arg value="고양이가 뛰다" type="String" name="moveData"/>
+    </bean>
+
+    <bean id="r1" class="kr.hs.study.beans.RabbitXml">
+        <constructor-arg value="래빗래빗" type="String" name="barkData"/>
+        <constructor-arg value="토끼가 먹다" type="String" name="eatData"/>
+        <constructor-arg value="토끼가 뛰다" type="String" name="moveData"/>
+    </bean>
+
+
+
+
+
+</beans>
