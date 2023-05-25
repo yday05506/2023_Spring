@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+  <h1 th:text=" 'Parameter Study' "/>
+  <a th:href="@{/test1?id=kim_id&pass=1111&name=kim&content=hello}">HttpServletRequest</a> </br>
+  <a th:href="@{/test2?id=kim_id&pass=1111&name=kim&content=hello}">WebRequest</a> </br>
+</body>
+</html>
