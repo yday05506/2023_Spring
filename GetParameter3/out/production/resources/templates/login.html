@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1 th:text=" 'login' "/>
+    <form method="post" action="/login">
+        ID </br> <input type="text" name="id"/> </br>
+        Password </br> <input type="password" name="pw"/> </br>
+        Name </br> <input type="text" name="name"> </br>
+        Email </br> <input type="email" name="email"/> </br>
+        Tel </br> <input type="tel" name="tel"/> </br>
+        Local </br> <input type="text" name="local"> </br>
+        <button type="submit" value="login">입력완료</button>
+    </form>
+</body>
+</html>
