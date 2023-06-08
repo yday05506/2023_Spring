@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:text=" 'Model & Model and View' "/>
+    <a th:href="@{/test1?data1=100&data2=200}">test1</a> </br>
+    <a th:href="@{/test2/300/400}">test2 @PathVariable</a> </br>
+    <a th:href="@{/test3?data5=500&data6=600}">test3 @RequestParam</a> </br>
+    <a th:href="@{/test4?data7=700&data8=800&data9=900}">test4 @ModelAttribute</a>
+</body>
+</html>
