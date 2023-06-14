@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 1</title>
+</head>
+<body>
+    <h1 th:text=" 'test1' "/>
+  <form method="post" action="/test1">
+    N <br /> <input type="number" name="N"/> <br />
+      M <br /> <input type="number" name="M"/> <br />
+      <button type="submit">입력</button> <br /> <br />
+
+      N부터 M까지의 합 : <span th:text="${sum}"/>
+  </form>
+</body>
+</html>

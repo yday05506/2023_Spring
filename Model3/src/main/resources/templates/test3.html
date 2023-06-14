@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test 3</title>
+</head>
+<body>
+<h1 th:text=" 'test3' "/>
+<form method="post" action="/test3">
+  N <br /> <input type="number" name="N"/> <br />
+  <button type="submit">입력</button> <br /> <br />
+
+  100부터 999까지의 n의 배수 합 : <span th:text="${sum}"/> <br/>
+  N의 배수 : <div th:each="item : ${list}">
+  <span th:text="${item}"/>
+  </div>
+</form>
+</body>
+</html>
