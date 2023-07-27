@@ -1,10 +1,10 @@
-package kr.hs.study.product.controller;
+package kr.hs.study.book.controller;
 
-import kr.hs.study.product.dao.productDAO;
-import kr.hs.study.product.dto.productDTO;
-import kr.hs.study.product.service.productService;
+import kr.hs.study.book.dto.bookDTO;
+import kr.hs.study.book.service.bookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class testController {
     @Autowired
-    private productService service;
+    private bookService service;
 
     @GetMapping("/regist")
     public String regist() {
@@ -20,8 +20,8 @@ public class testController {
     }
 
     @PostMapping("/regist")
-    public String regist1(@ModelAttribute productDTO r) {
-        service.add(r);
+    public String regist1(@ModelAttribute bookDTO dto) {
+        service.add(dto);
 
         return "index";
     }
