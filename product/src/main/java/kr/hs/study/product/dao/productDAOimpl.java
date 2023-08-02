@@ -26,6 +26,14 @@ public class productDAOimpl implements productDAO{
     }
 
     @Override
+    public productDTO read(String id) {
+        String sql = "select * from product where product_id=" + id + "";
+        productDTO dto = jdbc.queryForObject(sql, new BeanPropertyRowMapper<>(productDTO.class));
+
+        return dto;
+    }
+
+    @Override
     public List<productDTO> listAll() {
         String sql = "select * from product order by product_id asc";
         List<productDTO> dto = jdbc.query(sql, new BeanPropertyRowMapper<>(productDTO.class));

@@ -42,6 +42,14 @@ public class testController {
     public String delete1(@PathVariable String id) {
         service.delete1(id);
 
-        return "list";
+        return "redirect:/list";
+    }
+
+    @GetMapping("/update/{id}")
+    public String update_form(@PathVariable("id") String id, Model model) {
+        productDTO dto = service.read(id);
+        model.addAttribute("dto", dto);
+
+        return "modify";
     }
 }

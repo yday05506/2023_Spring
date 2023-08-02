@@ -23,6 +23,11 @@ public class productServiceimpl implements productService{
     }
 
     @Override
+    public productDTO read(String id) {
+        return dao.read(id);
+    }
+
+    @Override
     public List<productDTO> listAll() {
         return dao.listAll();
     }
